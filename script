@@ -1,5 +1,6 @@
 define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qualtrics/qbiat6.js'], function(APIConstructor, iatExtension){
  var API = new APIConstructor();
+
 	
 	return iatExtension({
 		practiceCategory1 : 
@@ -49,30 +50,27 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 			},
 			categories : [  //As many categories you need.
 				{
-					name : 'Old person', //Will appear in the data.
+					name : 'Mentally Ill People', //Will appear in the data.
 					title : {
 						media : {word : 'Mentally Ill People'}, //Name of the category presented in the task.
 						css : {color:'#31b404','font-size':'1.8em'}, //Style of the category title.
 						height : 4, //Height (because we need to know where to put the next item in the title)
 						startStimulus : {
-							media : {image : of1},
+							media : {word : 'person with anxiety, person with depression, person with schizophrenia'},
 							css : {color:'#31b404','font-size':'1em'}, 
 							height : 13
 						}
 					}, 
 					stimulusMedia : [ //Stimuli content as PIP's media objects
-					      {image : 'of1.jpg'}, 
-        				{image : 'of2.jpg'}, 
-        				{image : 'of3.jpg'},
-                {image : 'om1.jpg'},
-                {image : 'om2.jpg'},
-                {image : 'om3.jpg'}
+					{word : 'person with anxiety'}, 
+        				{word : 'person with depression'}, 
+        				{word : 'person with schizophrenia'} 
         				], 
 					//Stimulus css (style of the stimuli)
 					stimulusCss : {color:'#31b404','font-size':'2em'}
 				},	
 				{
-					name : 'Young person', 
+					name : 'Physically Ill People', 
 					title : {
 						media : {word : 'Physically Ill People'}, 
 						css : {color:'#31b404','font-size':'1.8em'}, 
@@ -84,14 +82,10 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 						}
 					}, 
 					stimulusMedia : [ //Stimuli content as PIP's media objects
-				 {image : 'of1.jpg'}, 
-        				{image : 'yf1.jpg'}, 
-        				{image : 'yf4.jpg'},
-                {image : 'yf5.jpg'},
-                {image : 'ym2.jpg'},
-                {image : 'ym3.jpg'},
-                (image : 'ym5.jpg'}
-        				], 
+					{word : 'person with appendicitis'}, 
+        				{word : 'person with cancer'}, 
+        				{word : 'person with pneumonia'}
+					], 
 					//Stimulus css
 					stimulusCss : {color:'#31b404','font-size':'2em'}
 				}
@@ -141,7 +135,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 				stimulusCss : {color:'#0000FF','font-size':'2em'} 
 			},
 			base_url : {//Where are your images at?
-			image : 'https://satchmo496.github.io/images/'
+			image : 'https://baranan.github.io/minno-tasks/images/'
 			},
       //practiceTrials are a few trials at the beginning of the task (Sriram & Greenwald recommend 2 trials for each category).
 			practiceTrials : //Set number of trials per group in the practice trials at the beginning of the task
@@ -161,18 +155,19 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
       
       //Sets what attribute appears first. Irrelevant if focalAttributes is not 'both'. 
 			firstFocalAttribute : 'random', //Accepts 'attribute1', 'attribute2' or 'random'. 
-
+      
       //Whether to start with a practice block.
 			practiceBlock : true, 
-			nPracticeBlockTrials : 8, //Should be at least 8 trials.
 			nPracticeBlockTrials : 12, //Should be at least 8 trials.
-
+			
 	//Whether to switch the focal attribute only once in the task (after all the blocks with the first focal attribute), 
 	//Or after every exhaustion of all the category-attribute combinations (e.g., twice if nCategoryAttributeBlocks).
 	//Relevant only when nCategoryAttributeBlocks>1, 
 	//and only if there is more than one focal attribute.
 			switchFocalAttributeOnce : true, 
+
 			//Number of blocks per focal category-attribute combination.
 			nCategoryAttributeBlocks : 2, 
+
 	});
 });
