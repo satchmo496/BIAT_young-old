@@ -182,6 +182,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 
 			//Number of blocks per focal category-attribute combination.
 			nCategoryAttributeBlocks : 2, 
+			
+			showStimuliWithInst : false,
 
 	});
 });
