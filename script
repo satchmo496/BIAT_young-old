@@ -171,8 +171,8 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 			firstFocalAttribute : 'random', //Accepts 'attribute1', 'attribute2' or 'random'. 
       
       //Whether to start with a practice block.
-			practiceBlock : true, 
-			nPracticeBlockTrials : 12, //Should be at least 8 trials.
+			practiceBlock : false, 
+			nPracticeBlockTrials : 8, //Should be at least 8 trials.
 			
 	//Whether to switch the focal attribute only once in the task (after all the blocks with the first focal attribute), 
 	//Or after every exhaustion of all the category-attribute combinations (e.g., twice if nCategoryAttributeBlocks).
