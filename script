@@ -110,14 +110,14 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 					}
 				}, 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
+					{word : 'Adore'}, 
 					{word : 'Cheer'}, 
-					{word : 'Excitement'}, 
-					{word : 'Beautiful'}, 
-					{word : 'Laughing'},
-					{word : 'Pleasure'},
-					{word : 'Celebrate'},
-					{word : 'Glorious'},
-					{word : 'Joyful'},
+					{word : 'Enjoy'}, 
+					{word : 'Excellent'},
+					{word : 'Fantastic'},
+					{word : 'Glad'},
+					{word : 'Lovely'},
+					{word : 'Spectacular'},
 				], 
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2em'}
@@ -136,14 +136,14 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/BIAT/qual
 					}
 				}, 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word : 'Horrible'}, 
-					{word : 'Negative'}, 
-					{word : 'Annoy'}, 
-					{word : 'Ugly'},
-					{word : 'Hatred'},
-					{word : 'Sick'},
-					{word : 'Hate'},
+					{word : 'Angry'}, 
+					{word : 'Failure'}, 
+					{word : 'Hatred'}, 
+					{word : 'Horrific'},
+					{word : 'Nasty'},
 					{word : 'Poison'},
+					{word : 'Selfish'},
+					{word : 'Ugly'},
 				], 
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2em'} 
